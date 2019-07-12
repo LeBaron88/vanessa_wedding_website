@@ -1,0 +1,456 @@
+/*
+    Le Baron88 - June 2019
+*/
+
+/* ------------Basic set-up------------ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', 'Sans-serif';
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+.clearfix {zoom:1;}
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+section {
+    padding: 70px 0;
+}
+.box {
+    padding: 1%;
+}
+.ceremonies {
+    text-align: center;
+}
+.guest_self_check {
+    padding:0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.55)), url("../images/vs_tables_bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 65px 0;
+    color: white;
+}
+.guest_self_check .guest_code {
+    font-size: 80%;
+    width: 20%;
+    margin: 20px auto;
+}
+.guest_self_check input{
+    color: #555;
+    text-align:center;
+    margin-bottom: 20px;
+}
+.save_the_date .description {
+    margin-bottom: 35px;
+}
+.details {
+    padding: 10px;
+    font-size: 90%;
+    display: inline-block;
+}
+/* ------------Headings------------ */
+h1 {
+    margin-top: 0;
+    margin-bottom: 0px;
+    color: #fff;
+    font-size: 450%;
+    font-weight: 300;
+    font-family: 'Niconne', cursive;
+    /*text-transform: uppercase;*/
+}
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+h2:after {
+    display: block;
+    height: 2px;
+    width: 250px;
+    content: " ";
+    background-color: #3498db;
+    margin: 30px auto 0px auto;
+}
+h3 {
+    font-size: 110%;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+h3:after {
+    display: block;
+    height: 2px;
+    width: 80px;
+    content: " ";
+    background-color: #3498db;
+    margin: 10px auto 0px auto;
+}
+/* ------------Paragraphs------------ */
+.description {
+    line-height: 145%;
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+}
+.box p {
+    font-size: 90%;
+    line-height: 145%;
+}
+/* ------------Links------------ */
+.city_features a:link,
+.city_features a:visited {
+    color: #3498db;
+    text-decoration: none;  
+    padding-bottom: 1px;
+    transition:  color .5s;
+}
+.city_features a:hover,
+.city_features a:active {
+    color: #555;
+}
+/* ------------icons------------ */
+.enlarge_icons {
+    font-size: 300%;
+    display: block;
+    color: #3498db;
+    margin-bottom: 10px;
+}
+.icon_small {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #3498db;
+    font-size: 120%;
+    margin-right: 10px;
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
+}
+i.fas {
+    font-size: 250%;
+    color: #3498db;
+    margin-bottom: 5px;
+}
+/* ------------Buttons------------ */
+.btn:link,
+.btn:visited,
+input[type=submit] {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 20px;
+    color: #fff;
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+    cursor: pointer;
+}
+.btn-full:link,
+.btn-full:visited,
+input[type=submit] {
+    background-color: #3498db;
+    border: 1px solid #3498db;
+    margin: 0 50%;
+    padding: 10px 0;
+    cursor: pointer;
+    transform: translate(-50%);
+    width: 60%;
+    text-align: center;
+}
+.btn-ghost:link,
+.btn-ghost:visited  {
+    border: 1px solid #3498db;
+    color: #217dbb;
+}
+.btn:active,
+.btn:hover,
+input[type=submit]:active ,
+input[type=submit]:hover {
+    background-color: #217dbb;
+}
+.btn-full:active,
+.btn-full:hover, 
+input[type=submit]:active,
+input[type=submit]:hover{
+    border: 1px solid #217dbb;
+}
+.btn-ghost:active,
+.btn-ghost:hover  {
+    border: 1px solid #217dbb;
+    color: white;
+}
+/* ------------Header------------*/
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(255, 255, 255, 1)), url("../images/vs_header_bg_small1.jpeg");
+    background-size: cover;
+    background-position: center;
+    font-family: 'Niconne', cursive;
+    height: 100vh;
+}
+.text {
+    position: absolute;
+    width: 100%;
+    top: 60%;
+}
+.header_text {
+    float: right;
+ 
+    padding-bottom: 20px;
+}
+.header_text_box {
+    padding: 0 0 10px 0;
+    width: 100%;
+    text-align: center;
+}
+.header_text_box span {
+    color: white;
+    font-size: 200%;
+    font-weight: 400;
+}
+.countdown table {
+    margin: 0 auto;
+    border-spacing: 30px 2px;
+}
+.countdown th {
+    color: white;
+    background-color: #bdc3c7;
+    background-color: rgba(189, 195, 199, .3);
+    border-radius: 50%;
+    /*border: 1px solid #bdc3c7;*/  
+    font-size: 150%;
+    width: 70px;
+    height: 70px;
+}
+.countdown td {
+    text-align: center;
+    color: #bdc3c7;
+    font-size: 100%;
+    font-weight: 300;
+}
+.main-nav {
+    margin-top: 25px;
+    text-align: center;
+    list-style: none;
+}
+.main-nav li {
+    display: inline-block;
+    margin-left: 30px;
+}
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 5px 0;
+    color: white;
+    text-decoration: none;
+    font-size: 110%;
+    border-bottom: 2px solid white transparent;
+    transition: border 0.2s, font-weight 0.2s;
+}
+.main-nav li a:visited,
+.main-nav li a:hover {
+    border-bottom: 2px solid white;
+    font-weight: 400;
+
+}
+/* ------------Mobile nav------------ */
+.mobile_nav_icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+.mobile_nav_icon i {
+    font-size: 300%;
+    color: white;
+}
+/* ------------Sticky nav------------ */
+.sticky {
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    z-index: 9999;
+    box-shadow: 0 2px 2px #dcdcdc;
+}
+.sticky .main-nav {
+    margin: 20px auto;
+    text-align: center;
+    list-style: none;
+}
+.sticky .main-nav li {
+    display: inline-block;
+    margin-left: 30px;
+}
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    color: black;
+    text-decoration: none;
+    font-size: 110%;
+    border-bottom: 2px solid black transparent;
+    transition: border 0.2s, font-weight 0.2s;
+}
+.sticky .main-nav li a:visited,
+.sticky .main-nav li a:hover {
+    font-weight: 400;
+    border-bottom: 2px solid black;
+
+}
+.sticky .logo {
+    float: left;
+    display: none;
+}
+.sticky .logo_black {
+    margin: 2px 0;
+    float: left;
+    display: block;
+}
+/* ------------Bride------------ */
+.bride {
+    background-color: whitesmoke;
+
+}
+.box img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 10%;
+}
+.desc_bride {
+    line-height: 145%;
+    text-align: left;
+    font-weight: 300;
+}
+/* ------------Groom------------ */
+.groom {
+    background-image: linear-gradient(rgba(189, 195, 199,.3), rgba(189, 195, 199,.3));
+    background-size: cover;
+    color: black;
+    background-attachment: fixed;
+}
+/* ------------Photo galley------------ */
+.photos {
+    width: 100%;
+    margin: 0 auto;
+}
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+textarea {
+    height: 100px;
+}
+*:focus {
+    outline: none;
+}
+/* ------------Footer------------ */
+footer {
+    background-color: #333;
+    padding: 50px;
+    font-size: 80%;
+}
+footer span {
+    font-size: 120%;
+    margin-right: 10px;
+}
+.footer_nav {
+    list-style: none;
+    float: left;
+}
+.social_links {
+    list-style: none;
+    text-align: right;
+}
+.footer_nav li,
+.social_links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+.footer_nav li:last-child,
+.social_links li:last-child {
+    margin-right: 0;
+}
+.footer_nav li a:link,
+.footer_nav li a:visited,
+.social_links li a:link,
+.social_links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    transition: color .3s;
+}
+.footer_nav li a:link,
+.footer_nav li a:visited,
+.social_links li a:link,
+.social_links li a:visited {
+    font-size:160%;
+}
+.footer_nav li a:hover,
+.footer_nav li a:active,
+.social_links li a:hover,
+.social_links li a:active {
+    color: #ddd;
+}
+footer p{
+    color: #888;
+    text-align: center;
+    font-size: 90%;
+    margin-top: 10px;
+}
+.ion-logo-facebook,
+.ion-logo-twitter,
+.ion-logo-instagram,
+.ion-logo-googpleplus {
+    transition: color .3s;
+}
+
+.ion-logo-facebook:hover {
+    color: #3b5998;
+}
+.ion-logo-googleplus:hover {
+    color: #dc4e41;
+}
+.ion-logo-instagram:hover {
+    color: #517fa4;
+}
+.ion-logo-twitter:hover {
+    color: #55acee;
+}
+
+/* ------------Animations------------ */
+.js__wp_1,
+.js__wp_2,
+.js__wp_3 {
+    opacity: 0;
+}
+.js__wp_1.animated,
+.js__wp_2.animated,
+.js__wp_3.animated {
+    opacity: 1;
+}

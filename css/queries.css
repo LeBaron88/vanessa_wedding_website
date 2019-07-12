@@ -1,0 +1,140 @@
+/*-----------Big tablets to desktops-----------*/
+@media screen and (max-width: 1500px) {
+    .header_text_box {
+        width: 100%;
+        padding: 0 3%;
+    }
+    h1 { font-size: 450%;}
+    .row{ padding: 0 3%;}
+    .countdown th { 
+        font-size: 150%;
+        height: 70px;
+        width: 70px;
+    }
+    .countdown td {font-size: 120%;}
+    .main-nav {display: bloack !important;}
+}
+/*-----------Big tablets to desktops-----------*/
+@media screen and (max-width: 1200px) {
+    .header_text_box {
+        width: 100%;
+        padding: 0 3%;
+    }
+    h1 { font-size: 450%;}
+    .row{ padding: 0 3%;}
+    .main-nav {display: bloack !important;}
+}
+/*-----------Small tablets to big tablets-----------*/
+@media screen and (max-width: 1023px) {
+    html { font-size: 17px;}
+    h1 { font-size: 350%;}
+    section { padding: 45px 0;}
+    .description {
+        width: 90%;
+        margin-left: 5%;
+    }
+    .icon_small { 
+        width: 20px;
+        margin-right: 5px;
+    }
+    .city_features { font-size: 90%;}
+    .photos { width: 80%;}
+    .main-nav {display: bloack !important;}
+}
+/*-----------Small phones to small tablets-----------*/
+@media screen and (max-width: 767px) {
+    html { font-size: 15px;}
+    section { padding: 30px 0;}
+    .row, .header_text_box { padding: 0 2%;}
+    .col { width: 100%;}
+    .logo {
+        text-align: center;
+        margin-top: 5px;
+        height: 50px;
+        width: auto;
+    }
+    .main-nav { display: none;}  
+    .mobile_nav_icon { 
+        display: inline-block;
+        margin-top: 10px;
+    }
+
+    .main-nav, .sticky .main-nav { 
+        float: left;
+        margin-top: 10px;
+
+    }
+    .main-nav li, .sticky .main-nav li { display: block;}
+    .main-nav li a:link,
+    .main-nav li a:visited,
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited { 
+        display: block;
+        border: 0;
+        padding: 5px;
+    }
+    .sticky .mobile_nav_icon i {
+        color: black;
+        margin-top: 10px;
+    }
+    .box img {
+        position: relative;
+        width: 60%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .description {
+        width: 100%;
+        margin-left: 0;
+    }
+    h1 { font-size: 350%;}
+    h2 { 
+        font-size: 150%;
+        margin-top: 50px;
+    }
+    h2:after {
+        width: 150px;
+    }
+    h3 { font-size: 90%;}
+    .header_text_box {
+        width: 100%;
+        padding: 0 3%;
+    }
+    .countdown th { 
+        font-size: 130%;
+        height: 70px;
+        width: 70px;
+    }
+    .countdown td {font-size: 120%;}
+    .footer_nav {
+        list-style: none;
+        text-align: center;
+        float: none;
+    }
+    .social_links {
+        text-align: center;
+        margin: 10px 0 10px 0;
+    }
+    .mobile_nav_icon {
+        margin-right: 15px;    
+    }
+}
+/*-----------Small phones-----------*/
+@media screen and (max-width: 480px) {
+    html { font-size: 13px;}
+    section { padding: 20px 0;}
+    .photos { width: 100%;}
+    .logo {
+        text-align: center;
+        margin-top: 5px;
+        height: 50px;
+        width: auto;
+    }
+    h1 { font-size: 350%;}
+    .countdown th {
+        font-size: 120%;
+        height: 45px;
+        width: 45px;
+    }
+
+}

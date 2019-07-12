@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Wedding website for Vanessa and Soleil by Precious Solution"/>
+        <meta name="keywords" content="HTML,CSS,JSON,JavaScript,jquery,wedding">
+        <meta name="author" content="Le Baron 88">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/grid.css">
+        <link rel="stylesheet" type="text/css" href="css/animated.css">
+        <link rel="stylesheet" type="text/css" href="css/all.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/zoomwall.css">
+        <link rel="stylesheet" type="text/css" href="css/queries.css">
+        <link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400,400i&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Niconne&display=swap" rel="stylesheet">
+        <title>Vanessa & Soleil</title>
+    </head>
+    <body>
+        <header id="header">
+            <nav>
+                <div class="row">
+                    <ul class="main-nav js__main_nav">
+                        <li><a href="#save_the_date">Save the date</a></li>
+                        <li><a href="#bride">Vanessa W.</a></li>
+                        <li><a href="#groom">Soleil M.</a></li>
+                        <li><a href="#photos">Photos</a></li>
+                    </ul>   
+                    <a class="mobile_nav_icon js__nav_icon"><i id="icon" class="icon ion-ios-menu"></i></a>
+                </div>
+            </nav>
+            <div class="row text">
+                <div class="col span-2-of-3 header_text">
+                    <div class="row">
+                        <div class="header_text_box">
+                            <h1>Vanessa & Soleil</h1>
+                            <span>27 Juillet 2019</span><br>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="countdown">
+                            <table>
+                                <tr>
+                                    <th id="days">.</th>
+                                    <th id="hours">.</th>
+                                    <th id="minutes">.</th>
+                                    <th id="seconds">.</th>
+                                </tr>
+                                <tr>
+                                    <td>jours</td>
+                                    <td>heures</td>
+                                    <td>minutes</td>
+                                    <td>secondes</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="save_the_date js__save_the_date js__wp_1" id="save_the_date">
+            <div class="row">
+                <h2>Les cérémonies</h2>
+                <p class="description">Deux hommes associés valent mieux qu’un seul. À deux, 
+                    ils obtiennent un meilleur résultat pour leur travail. Si l’un des deux tombe, 
+                    l’autre le relève. Au contraire, celui qui est seul, est bien malheureux. 
+                    S’il tombe, il n’y a personne pour le relever. (Ecclésiaste 4.9-10)</p>
+            </div>
+            <div class="row ceremonies">
+                <div class="col span-1-of-3 box">
+                    <i class="fas fa-university"></i>
+                    <h3>Commune de Lubumbashi</h3>
+                    <i class="icon ion-ios-pin"></i><br><span class="details">1936, av Mwepu,<br>C/Lubumbashi</span><br>
+                    <i class="icon ion-ios-calendar"></i><span class="details">26 Juillet 2019</span><br>
+                    <i class="icon ion-md-time"></i><span class="details">10h00</span><br>
+                </div>
+                <div class="col span-1-of-3 box">
+                    <i class="fas fa-church"></i>
+                    <h3>Les Moissonneurs du Seigneur</h3>
+                    <i class="icon ion-ios-pin"></i><br><span class="details">1936, av de la Révolution,<br>C/Lubumbashi</span><br>
+                    <i class="icon ion-ios-calendar"></i><span class="details">27 Juillet 2019</span><br>
+                    <i class="icon ion-md-time"></i><span class="details">15h00</span><br>
+                </div>
+                <div class="col span-1-of-3 box">
+                    <i class="fas fa-glass-cheers"></i>
+                    <h3>Salle de fête SHUKRA</h3>
+                    <i class="icon ion-ios-pin"></i><br><span class="details">7832, av Kilwa coin Ruwe,<br>Q/golf lido, C/Lubumbashi</span><br>
+                    <i class="icon ion-ios-calendar"></i><span class="details">27 Juillet 2019</span><br>
+                    <i class="icon ion-md-time"></i><span class="details">19h00</span><br>
+                </div>      
+            </div>
+        </section>
+        <div class="clearfix"></div>
+        <section class="guest_self_check" id="guest">
+            <div class="row">
+                <h2>Invités</h2>
+                <p class="description" id="guest_data">Souhaiteriez-vous connaitre votre table lors de la reception ? <br>
+                Alors entrez le code se trouvant sur votre invitation.</p>
+                <div class="guest_code">
+                    <input type="text" name="guest_code" id="guest_code" placeholder="Entrez votre code"> 
+                    <a href="#guest" class="btn btn-full"  id="guest_check">Vérifier</a> 
+                </div>       
+            </div>
+        </section>
+        <section class="bride" id="bride">
+            <div class="row">
+                <h2>Vanessa Ngamala Ne Wawa</h2>
+            </div>
+            <div class="row js__wp_2">
+                <div class="col span-1-of-3 box">
+                    <img src="images/vs_vanessa.jpeg" alt="vanessa portrait">               
+                </div>
+                <div class="col span-2-of-3 box desc_bride ">
+                        Née à Lubumbashi, deuxième fille de Mr Wawa Léonard et Ngamala Vicky. A l’âge de 3 ans, sa famille partit pour Kinshasa où elle fit ses études primaires au Complexe Scolaire St Raphael. A 12 ans, elle revint avec sa famille à Lubumbashi et continua ses études secondaires au Complexe Scolaire Anuarite et obtint son diplôme d’Etat en latin-philo.
+                        Détentrice d’un diplôme de Licence en Sciences de l’Information et de la Communication option Communication des Organisations à l’Université de Lubumbashi.
+                        <br><br>Vanessa est une passionnée de Jésus, chrétienne protestante, elle est une personne joviale, généreuse, ambitieuse, pleine de vie, aimant le foot et Chelsea est son club favori. Passionnée de voyage et ce fut au retour de l’un de ses voyages qu’elle fit la rencontre de Soleil au travers d’une amie ne sachant pas que cette rencontre allait devenir la plus merveilleuse rencontre de sa vie. De cette rencontre était née une belle amitié entre Soleil et elle, partageant plusieurs centres d’intérêts entre autre la musique, la lecture, le cinéma et surtout ils ont eu une amitié basée sur Christ.
+                        Vanessa a hâte de voir ce que l’avenir lui réserve et se sent bénie d’avoir rencontré quelqu’un de spécial, son autre moitié, SOLEIL.
+                </div>       
+            </div>
+        </section>
+
+        <section class="groom" id="groom">
+            <div class="row">
+                <h2>Soleil Ntambwe Munung</h2>
+            </div>
+            <div class="row js__wp_3">
+                <div class="col span-2-of-3 box desc_bride ">
+                        Né d’un ex ingénieur Métallurgiste de la Générale des Carrières et des Mines (Gécamines) Mukaz Mwin Kasaj Christophe et d’une enseignante Madame Charlotte Munay Ntamb, Soleil se passionne dans son adolescence au commerce qui ne reste oublier dans son éducation, détenteur d’un diplôme d’état en commercial administratif à l’Institut Maadini ou il fit ses études humanitaires et d’un diplôme de licence en Economie option Gestion financière à l’Université de Lubumbashi. 
+                        <br><br>Cofondateur avec Vanessa Wawa d’une entreprise de prestation des services « la Global Services » où ils mettent ensemble leurs savoir-faire pour bâtir l’empire « MUNUNG »
+Soleil est économiste financier travaillant dans le domaine des taxes accès au secteur minier, servant Dieu au Centre Missionnaire Philadelphie Extension de Lubumbashi, comme évangéliste depuis plus de 2 ans et actuellement encadreur au département des affermissements et formation des nouveaux Chrétiens, amoureux de l’art photographique, passionné de la lecture ou l’on retiendra un de ses écrivains favori John MacArthur.
+Amoureux d’une charmante demoiselle Vanessa Wawa qu’il décide de conquérir, en décembre 2018 il lui avoue son projet d’avenir et lui demande sa main…c’est ici que débute l’histoire de Vanessa et Soleil que le monde attend voir avec ardent désir.
+<br><br>
+« Two hearts two lives joined together by friendship united forever in love »
+                </div>
+                <div class="col span-1-of-3 box">
+                    <img src="images/vs_soleil.jpeg" alt="soleil portrait">               
+                </div>
+            </div>
+        </section>
+
+        <section class="photos js__photos" id="photos">
+            <div class="row">
+                <h2>Nos moments</h2>
+            </div>
+            <div class="row js__wp_4">
+                <div id="gallery" class="zoomwall">
+                    <img src="images/vs_best.jpg" data-highres="images/vs_best.jpg" alt="Vanessa soleil gallery photos"/>
+                    <img src="images/vs_soleil.jpeg" data-highres="images/vs_soleil.jpeg" alt="Vanessa soleil gallery photos"/>
+                    <img src="images/vs_vs1.jpeg" data-highres="images/vs_vs1.jpeg" alt="Vanessa soleil gallery photos"/>
+                    <img src="images/vs_vanessa.jpeg" data-highres="images/vs_vanessa.jpeg" alt="Vanessa soleil gallery photos"/>
+                    <img src="images/vs_vanessa1.jpeg" data-highres="images/vs_vanessa1.jpeg" alt="Vanessa soleil gallery photos"/>
+                    <img src="images/vs_soleil1.jpeg" data-highres="images/vs_soleil1.jpeg" alt="Vanessa soleil gallery photos"/>
+                    <img src="images/vs_vs2.jpeg" data-highres="images/vs_vs2.jpeg" alt="Vanessa soleil gallery photos"/>
+                    <img src="images/vs_vanessa2.jpeg" data-highres="images/vs_vanessa2.jpeg" alt="Vanessa soleil gallery photos"/>
+                    <img src="images/vs_soleil2.jpeg" data-highres="images/vs_soleil2.jpeg" alt="Vanessa soleil gallery photos"/>
+                    <img src="images/vs_vs3.jpeg" data-highres="images/vs_vs3.jpeg" alt="Vanessa soleil gallery photos"/>
+                    <img src="images/vs_vanessa3.jpeg" data-highres="images/vs_vanessa3.jpeg" alt="Vanessa soleil gallery photos"/>
+                    <img src="images/vs_vs4.jpeg" data-highres="images/vs_vs4.jpeg" alt="Vanessa soleil gallery photos"/>
+                    <img src="images/vs_vanessa4.jpeg" data-highres="images/vs_vanessa4.jpeg" alt="Vanessa soleil gallery photos"/>
+                    <img src="images/vs_casual2.jpeg" data-highres="images/vs_casual2.jpeg" alt="Vanessa soleil gallery photos"/>
+                    <img src="images/vs_vs5.jpeg" data-highres="images/vs_vs5.jpeg" alt="Vanessa soleil gallery photos"/>
+                    <img src="images/vs_casual3.jpeg" data-highres="images/vs_casual3.jpeg" alt="Vanessa soleil gallery photos"/>  
+                    <img src="images/vs_vs2.jpeg" data-highres="images/vs_vs2.jpeg" alt="Vanessa soleil gallery photos"/>  
+                    <img src="images/vs_casual1.jpeg" data-highres="images/vs_casual1.jpeg" alt="Vanessa soleil gallery photos"/>  
+                    <img src="images/vs_vanessa.jpeg" data-highres="images/vs_vanessa.jpeg" alt="Vanessa soleil gallery photos"/> 
+                    <img src="images/vs_vs1.jpeg" data-highres="images/vs_vs1.jpeg" alt="Vanessa soleil gallery photos"/>   
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="row">
+                <div class="col span-1-of-2 footer_nav">
+                    <span>Vanessa:</span>
+                    <ul>
+                        <li><a href="#"><i class="icon ion-logo-facebook"></i></a></li>
+                        <li><a href="#"><i class="icon ion-logo-twitter"></i></a></li>
+                        <li><a href="#"><i class="icon ion-logo-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col span-1-of-2 social_links">
+                    <span>Soleil:</span>
+                    <ul>
+                        <li><a href="#"><i class="icon ion-logo-facebook"></i></a></li>
+                        <li><a href="#"><i class="icon ion-logo-twitter"></i></a></li>
+                        <li><a href="#"><i class="icon ion-logo-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <p>Copyright &copy; 2019 Precious Solution. All rights reserved.</p>
+            </div>
+        </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/zoomwall.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+    <script src="js/script.js"></script>
+    </body> 
+</html>
